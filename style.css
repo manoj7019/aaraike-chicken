@@ -8,7 +8,7 @@
 body {
     font-family: 'Inter', sans-serif;
     min-height: 100vh;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 /* head-part */
@@ -87,11 +87,6 @@ body {
     }
 }
 
-/* @media only screen and (max-width: 1204px) {
-    .body01, .body02 {
-        font: 800;
-} */
-
 .headline {
     margin-bottom: 1rem;
     width: 90%;
@@ -100,10 +95,12 @@ body {
 
 h1 {
     font-size: 2.1rem;
+    /* color: #ff4500 */
     /* font-size-adjust: 0.5; */
 }
 
 .headPara {
+    color: #ff4500;
     margin-top: 0.5rem;
     font-size: 1.2rem;
     width: 80%;
@@ -128,8 +125,12 @@ h1 {
     margin-left: 0.5rem;
 }
 
-p {
+.waitingText {
     font-size: 0.8rem;
+}
+
+p {
+    font-size: 1rem;
     font-weight: 500;
 }
 
@@ -142,7 +143,8 @@ p {
 #harshithImage,
 #abhiImage,
 #starImage1,
-#starImage2 {
+#starImage2,
+#starImage3 {
     height: 3rem;
     width: 3rem;
     border-radius: 1.5rem;
@@ -170,7 +172,7 @@ p {
 }
 
 #manuImage {
-    width: 85%;
+    width: 80%;
     border-radius: 16rem 16rem 2rem 16rem;
 }
 
@@ -185,7 +187,7 @@ p {
 /* TRUSTED PARTNERS PART */
 
 .body2 {
-    background-color: rgb(255, 213, 0);
+    background-color: rgb(255, 248, 213);
     display: flex;
     flex-direction: column;
     margin: 2rem 0 2rem 0;
@@ -215,6 +217,7 @@ p {
     border-radius: 0.5rem;
     margin: 0.5rem;
     box-shadow: 0 0.5rem 2rem rgb(255, 183, 0);
+    box-shadow: 0 0.5rem 2rem lightgray;
 }
 
 @media only screen and (max-width: 768px) {
@@ -223,15 +226,97 @@ p {
     }
 }
 
+/* Our story page */
+
+.body3 {
+    display: flex;
+    margin: 2rem 0 -1rem 0;
+    flex-wrap: wrap;
+    /* background-color: rgb(246, 246, 246); */
+    /* flex: 1 1 auto; */
+}
+
+.ourStoryImage {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: calc(40% - 6rem);
+    margin: 2rem 1.5rem -2rem 1.5rem;
+    flex: 1 1 auto;
+}
+
+.ourStartDate {
+    font-size: 1rem;
+    border-radius: 0.8rem;
+    color: white;
+    background-color: rgba(245, 192, 79, 0.5);
+    box-shadow: 0.25rem 0 1rem rgb(224, 157, 0);
+    font-weight: 600;
+    width: 40%;
+    border: none;
+    text-align: center;
+    padding: 1.2rem 0.7rem;
+    margin-left: -5rem;
+}
+
+#ourStoryImage {
+    width: 85%;
+    border-radius: 16rem 2rem 16rem 16rem;
+    box-shadow: 0rem 1rem 2rem rgb(199, 199, 199);
+}
+
+.ourStoryText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(60% - 6rem);
+    margin: 3rem 0.5rem 3rem 1.5rem;
+    flex: 1 1 auto;
+}
+
+.starImage3 {
+    align-self: flex-end;
+    margin-right: 6rem;
+}
+
+.ourStoryHeadline {
+    font-size: 1.5rem;
+    margin-bottom: 1rem ;
+}
+
+.ourStoryPara {
+    margin-bottom: 1rem;
+    padding-right: 4rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .ourStoryText,
+    .ourStoryImage {
+        width: calc(100% - 6rem);
+    }
+}
+
+#knowMore {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #ff4500;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    width: 40%;
+    margin-top: 1rem;
+}
+
+
 /* our featured product */
 
 .body4 {
+    background-color: rgb(255, 248, 213);
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 3rem 0rem 3rem 0rem;
-    background-color: rgb(255, 213, 0);
-    /* color: white; */
+    margin: 1rem 0rem 3rem 0rem;
 }
 
 .products {
@@ -257,7 +342,8 @@ p {
     border-radius: 1rem;
     width: calc(25% - 1rem);
     background-color: white;
-    box-shadow: 0 0.2rem 2rem rgb(255, 183, 0);
+    /* box-shadow: 0 0.2rem 1rem rgb(255, 183, 0); */
+    box-shadow: 0 0.5rem 1rem rgb(255, 209, 129);
 }
 
 @media only screen and (max-width: 768px) {
@@ -278,3 +364,70 @@ p {
 .productInfo {
     margin: 1rem;
 }
+
+/* map part */
+
+.body5 {
+    display: flex;
+    margin: 0rem 0 -1rem 0;
+    flex-wrap: wrap;
+}
+
+.ourMapText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(60% - 6rem);
+    margin: 1rem 0.5rem 1rem 1.5rem;
+    flex: 1 1 auto;
+}
+
+.ourMapHeadline {
+    font-size: 1.5rem;
+    margin-bottom: 1rem ;
+}
+
+.ourMapPara {
+    margin-bottom: 1rem;
+    padding-right: 4rem;
+}
+
+.ourMapImage {
+    display: flex;
+    align-items: center;
+    width: calc(40% - 6rem);
+    margin: 2rem 1.5rem 2rem 1.5rem;
+    flex: 1 1 auto;
+}
+
+#ourMapImage {
+    width: 85%;
+    border-radius: 2rem 9rem 2rem 2rem;
+    box-shadow: 0rem 1rem 2rem rgb(199, 199, 199);
+}
+
+.ourMapDate {
+    position: relative;
+    font-size: 1rem;
+    border-radius: 0.8rem;
+    color: white;
+    /* background-color: rgba(245, 192, 79, 0.5); */
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: -0.5rem 0rem 1.5rem rgb(178, 178, 178);
+    /* box-shadow: -0.25rem 0 1rem rgb(224, 157, 0); */
+    font-weight: 600;
+    width: 40%;
+    border: none;
+    text-align: center;
+    padding: 1.2rem 0.7rem;
+    margin-right: -5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .ourMapText,
+    .ourMapImage {
+        width: calc(100% - 6rem);
+    }
+}
+
+
