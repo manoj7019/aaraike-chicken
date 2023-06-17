@@ -14,11 +14,17 @@ body {
 /* head-part */
 
 .head {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 1rem 1.5rem 0 1.5rem;
+    margin: 0.5rem 0 0 0;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
     align-items: center;
+    z-index: 2;
 }
 
 .logo {
@@ -100,7 +106,7 @@ h1 {
 }
 
 .headPara {
-    color: #ff4500;
+    /* color: rgba(0, 0, 0, 0.693); */
     margin-top: 0.5rem;
     font-size: 1.2rem;
     width: 80%;
@@ -166,12 +172,21 @@ p {
     width: 8rem;
     border-radius: 4rem;
     margin-right: -4rem;
-    align-self: flex-end;
+    align-self: flex-start;
+    z-index: 1;
     /* margin-bottom: 2rem; */
     /* margin-left: 3rem; */
 }
 
+/* #henImage2 {
+    width: 8rem;
+    border-radius: 4rem;
+    margin-right: -4rem;
+    margin-left: -20rem;
+} */
+
 #manuImage {
+    /* position: relative; */
     width: 80%;
     border-radius: 16rem 16rem 2rem 16rem;
 }
@@ -226,7 +241,7 @@ p {
     }
 }
 
-/* Our story page */
+/* Our story part */
 
 .body3 {
     display: flex;
@@ -286,7 +301,7 @@ p {
 
 .ourStoryPara {
     margin-bottom: 1rem;
-    padding-right: 4rem;
+    padding-right: 1rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -316,7 +331,7 @@ p {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 1rem 0rem 3rem 0rem;
+    margin: 1rem 0rem 1rem 0rem;
 }
 
 .products {
@@ -343,7 +358,7 @@ p {
     width: calc(25% - 1rem);
     background-color: white;
     /* box-shadow: 0 0.2rem 1rem rgb(255, 183, 0); */
-    box-shadow: 0 0.5rem 1rem rgb(255, 209, 129);
+    box-shadow: 0 0.5rem 1rem rgba(224, 162, 4, 0.453);
 }
 
 @media only screen and (max-width: 768px) {
@@ -390,7 +405,7 @@ p {
 
 .ourMapPara {
     margin-bottom: 1rem;
-    padding-right: 4rem;
+    padding-right: 1.5rem;
 }
 
 .ourMapImage {
@@ -429,6 +444,114 @@ p {
     .ourMapImage {
         width: calc(100% - 6rem);
     }
+
+    #mapBtnImage {
+        transform: rotate(90deg);
+    }
+}
+
+.ourMapBtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #ff4500;
+    border: none;
+    padding: 1rem 1rem 1rem 2rem;
+    border-radius: 1rem;
+    width: 90%;
+    /* margin-top: 1rem; */
+}
+
+#mapBtnImage {
+    width: 3rem;
+    border-radius: 1rem;
+}
+
+.customers,
+.branches {
+    margin-right: 1rem;
+    /* width: 30%; */
+}
+
+.customersPara,
+.branchesPara {
+    font-size: 0.7rem;
+}
+
+/* Get in touch */
+
+.body6 {
+    background-image: url('./images/poultry3.jpg');
+    background-size: cover;
+    /* filter: brightness(50%); */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0 0rem 0;
+}
+
+.touchHeadline {
+    text-align: center;
+    margin: 2rem 0 0rem 0;
+    font-size: 1.5rem;
+}
+
+.touchPara {
+    text-align: center;
+    margin: 0.5rem 2rem;
+}
+
+.touchImages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0.5rem 1.5rem 2rem 1.5rem;
+    /* flex-wrap: wrap; */
+}
+
+#social {
+    width: 2rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    border: 0.15rem solid white;
+    box-shadow: 0 0.5rem 2rem rgb(255, 255, 255);
+    /* box-shadow: 0 0.5rem 2rem lightgray; */
+}
+/* @media only screen and (max-width: 768px) {
+    #partner {
+        width: calc(33.3333% - 3rem);
+    }
+} */
+
+/* foot part */
+
+#githubIcon {
+    width: 1rem;
+    align-self: center;
+    margin: 0.2rem 0 0 0.1rem;
+}
+
+.foot {
+    padding: 0.3rem;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+    text-align: center;
+    /* margin: 1rem; */
+}
+
+.designerPart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footText {
+    font-size: 0.5rem;
+    color: rgb(26, 26, 26);
+    margin: 0.25rem;
 }
 
 
