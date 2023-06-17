@@ -249,14 +249,14 @@ p {
     font-size: 1rem;
     border-radius: 0.8rem;
     color: white;
-    background-color: rgba(245, 192, 79, 0.5);
-    box-shadow: 0.25rem 0 1rem rgb(224, 157, 0);
+    background-color: rgba(169, 168, 168, 0.229);
+    box-shadow: 0.25rem 3rem 3rem rgba(38, 36, 36, 0.228);
     font-weight: 600;
-    width: 40%;
+    width: 50%;
     border: none;
     text-align: center;
     padding: 1.2rem 0.7rem;
-    margin-left: -5rem;
+    margin-left: -6rem;
 }
 
 #ourStoryImage {
@@ -338,7 +338,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0.5rem;
+    margin: 0rem 0.5rem 1rem 0.5rem;
     border-radius: 1rem;
     width: calc(25% - 1rem);
     background-color: white;
@@ -362,7 +362,8 @@ p {
 }
 
 .productInfo {
-    margin: 1rem;
+    margin: 0.5rem 1.2rem 1rem 1.2rem;
+    font-size: 0.6rem;
 }
 
 /* map part */
@@ -412,8 +413,8 @@ p {
     border-radius: 0.8rem;
     color: white;
     /* background-color: rgba(245, 192, 79, 0.5); */
-    background-color: rgba(255, 255, 255, 0.4);
-    box-shadow: -0.5rem 0rem 1.5rem rgb(178, 178, 178);
+    background-color: rgba(249, 131, 5, 0.464);
+    box-shadow: -0.25rem 3rem 3rem rgba(227, 163, 0, 0.239);
     /* box-shadow: -0.25rem 0 1rem rgb(224, 157, 0); */
     font-weight: 600;
     width: 40%;
