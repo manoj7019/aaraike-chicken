@@ -464,7 +464,7 @@ p {
     padding: 1rem 1rem 1rem 2rem;
     border-radius: 1rem;
     width: 90%;
-    box-shadow: 0rem 1rem 2rem rgb(199, 199, 199);
+    box-shadow: 0rem 1rem 2rem rgba(88, 88, 88, 0.259);
     /* margin-top: 1rem; */
 }
 
